@@ -84,11 +84,9 @@ Top level folders:
 
 ## Configuring Linode
 
-~~For both main an arena server you will need to switch to a distribution-supplied kernel, as Linode uses a custom kernel by default. This will enable SELinux the next time your your Fedora image is booted.~~ **Linode now builds with distribution-supplied kernels by default, and SELinux is enabled on Fedora servers in Linode by default.**
+~~For both main an arena server you will need to switch to a distribution-supplied kernel, as Linode uses a custom kernel by default. This will enable SELinux the next time your your Fedora image is booted.~~ **Linode now builds with distribution-supplied kernels by default, and SELinux is enabled on Fedora servers in Linode by default.**  
+When building your linode, make sure to check "Private IP" at the bottom.  
 Once you created a Linode (1024 MiB of RAM, 20 GiB SSD, or better) and deployed the Fedora image you need to boot your linode, and wait until it boots up. Ssh in to make sure it did, or watch the boot progress in Lish.
-
-Go to Linode Manager and edit your linode configuration profile. In the "Boot Settings" section select "GRUB 2" from the "Kernel" drop down, and click "Save changes". On
-the "Remote Access" tab Click "Add a Private IP". Reboot your linode. Wait for it to back come up. It will take slightly longer than usual, as SeLinux relabeling and another reboot will happen automatically. Now you can follow the rest of the installation steps above.
 
 ## Setting up main server
 
