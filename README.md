@@ -183,7 +183,7 @@ Setup adds 127.0.0.1 as a linked arena, so once setup is finished, you should be
 
 ## Setting up arena
 
-You need to provision a fresh linode and configure kernel as described above. You need to add root/apache public keys so that the main server can initialise the arena.
+You need to provision a fresh linode as described above. You need to add root/apache public keys so that the main server can initialise the arena.
 The simplest way to do this is just to copy `/root/.ssh/authorized_keys` over from main. In addition you need to make sure that the host key for ssh (in `/etc/ssh/ssh_host_ed25519_key`) matches the corresponding public key from main.
 
 Once all the above ready run on main:
