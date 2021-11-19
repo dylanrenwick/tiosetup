@@ -12,11 +12,14 @@ TryItOnlineCommit="master"
 # The following five settings are for the domain names used in the setup
 # Please read more about them in accompanying documentation.
 
-# Domain where https://tryitonline.net will be hosted
-TRYITONLINENET=www2.tryitonline.nz
-
-# Domain where https://tio.run will be hosted
+# Main TIO domain
+# This is tio.run for original TIO
 TIORUN=tio2.tryitonline.nz
+
+# Secondary domain for redirecting
+# This is tryitonline.net for original TIO
+# Leave blank to skip setting up secondary domain
+# TRYITONLINENET=www2.tryitonline.nz
 
 # Domain for <language>.tryitonline.net -> tio.run/nexus/<language> redirects.
 # This setting is optional and may be left empty or removed entirely.
