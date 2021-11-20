@@ -1,0 +1,9 @@
+#!/bin/bash
+
+err=0
+trap 'err=1' ERR
+
+export CHOOSENIM_CHOOSE_VERSION=stable
+wget -qO - https://nim-lang.org/choosenim/init.sh | sh -s - -y
+
+exit "$err"
